@@ -7,27 +7,57 @@
     <title>Prevod</title>
 </head>
 <style>
-    form {
-        display: table;
-    }
-    body{
-        color: blue;
+form {
+    display: inline-block;
+  max-width: 600px;
+  margin: auto;
+  padding: 20px;
+  background-color: #f2f2f2;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+form h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  resize: vertical;
+}
+
+form input[type="submit"] {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+
+form input[type="submit"]:hover {
+  background-color: #45a049;
+}
+body{
+color: blue;
         font-size: 50px;
         display: absolute;
-        text-align: center;
-        
-    }
-    .mid{
-      border: 15px solid red; height: 150px; display: flex; justify-content: center; align-items: center; background: black;
-    }
-    input{
-        height: 60px;
-        width: 200px;
-        padding: 20px;
-    }
+        text-align: center;}
     </style>
 <body>
-    <div class="mid">
+    <div style="text-align:center">
         <form method="POST">
             <input type="text" name="text1" placeholder="192.168.1.3">
             <input type="submit" name="prvni" value="Prevod">
