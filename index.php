@@ -67,7 +67,7 @@ color: blue;
             <input type="submit" name="druhy" value="Prevod">
         </form>
         <form method="POST">
-            <input type="text" name="text3" placeholder="a1,a2,a3,bc">
+            <input type="text" name="text3" placeholder="a1:a2:a3:bc">
             <input type="submit" name="treti" value="Prevod">
         </form>
 </div>
